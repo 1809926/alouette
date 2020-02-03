@@ -14,8 +14,9 @@ include "../Alouette.php";
             <?php include "../footer.inc.php"; ?>
             <?php include "../menu.inc.php"; ?>
     		<div class="body">
-                <h1><?php echo Alouette::titre($oiseau, $qualite); ?></h1>
-                <?php echo Alouette::chanson($oiseau, $qualite, $action, $membres); ?>
+                <h1><?php echo Alouette::titre("jet bleu", $qualite); ?></h1>
+				<?php echo Alouette::chanson("alouette", "gentille", "plumerai", "dos"); ?>
+				<?php echo Alouette::strophe("alouette", "gentille", "plumerai", "la tête", ""); ?>
             </div>
         </div>
 	</body>
