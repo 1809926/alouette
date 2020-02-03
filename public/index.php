@@ -1,4 +1,7 @@
-<!DOCTYPE html>
+<?php
+include("../Alouette.php");
+include("../donnees.inc.php");
+?><!DOCTYPE html>
 <html lang="fr">
 
 <head>
@@ -34,6 +37,7 @@
 							<div>Alouette, je te plumerai.</div>
 						</div>
 					</div>
+					<?php echo alouette::actionMebre();?>
 					<div class="appel">Je te plumerai la tête</div>
 					<div class="reponse">Je te plumerai la tête</div>
 					<div class="appel">Et la tête</div>

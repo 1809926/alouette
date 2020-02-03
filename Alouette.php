@@ -6,7 +6,10 @@ class Alouette {
 	 * @param string $qualite - La qualité que l'on donne à l'oiseau (gentille)
 	 * @return string
 	 */
-
+	static public function titre($oiseau,$qualite){
+		$resultat='';
+		return $resultat;
+	}
 
 	/** Méthode chanson
 	 * Retourne la chanson au complet dans un div.chanson
@@ -17,7 +20,12 @@ class Alouette {
 	 * @uses strophe
 	 * @return string
 	 */
-	
+	static public function chanson($oiseau,$qualite,$action){
+		$resultat='';
+		$membres[] = '';
+		return $resultat;
+		
+	}
 	
 	/** Méthode strophe
 	 * Retourne une strophe au complet
@@ -30,7 +38,11 @@ class Alouette {
 	 * @uses couplet
 	 * @return string
 	 */
-	
+	static public function strophe($oiseau, $qualite, $action, $membre){
+		$resultat='';
+		$membresDits[] = '';
+		return $resultat;
+	}
 	
 	/** Méthode refrain
 	 * Retourne les 2 phrases du refrain dans des div. Le tout répété 2 fois à l'aide
@@ -42,7 +54,10 @@ class Alouette {
 	 * @uses appelReponse
 	 * @return string
 	 */
-	
+	static public function refrain($oiseau, $qualite, $action ){
+		$resultat='';
+		return $resultat;
+	}
 
 	/** Méthode couplet
 	 * Génère l'appel puis la réponse d'une phrase de la chanson passée en paramètre.
@@ -56,7 +71,11 @@ class Alouette {
 	 * @return string
 	 * @note L'appel est dans un div.appel et la réponse, dans un div.reponse
 	 */
-	
+	static public function couplet($oiseau, $action, $membre){
+		$resultat='';
+		$membresDits[] = '';
+		return $resultat;
+	}
 	
 	 /** Méthode appelReponse
 	 * Génère l'appel puis la réponse d'une phrase de la chanson passée en paramètre.
@@ -64,7 +83,10 @@ class Alouette {
 	 * @return string
 	 * @note L'appel est dans un div.appel et la réponse, dans un div.reponse
 	 */
-
+	static public function appelReponse($phrase){
+		$resultat='';
+		return $resultat;
+	}
 
 	/** Méthode enumMembres
 	 * Génère l'énumération des membres passée en paramètre.
@@ -72,7 +94,10 @@ class Alouette {
 	 * @uses appelReponse
 	 * @return string
 	 */
-
+	static public function enumMembres(){
+		$resultat='';
+		return $resultat;
+	}
 	
 	/** Méthode actionMembre
 	 * Génère la menace faite à l'oiseau sur son membre.
@@ -81,6 +106,13 @@ class Alouette {
 	 * @uses appelReponse
 	 * @return string
 	 */
+
+	 static public function actionMembre($action,$membre){
+		 $resultat='';
+		 $resultat.='<div class="appel">Je te plumerai la tête</div>';
+		 $resultat.='<div class="reponse">Je te plumerai la tête</div>';
+		 return $resultat;
+	 }
 
 
 }
