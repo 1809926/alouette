@@ -37,7 +37,7 @@ include("../donnees.inc.php");
 							<div>Alouette, je te plumerai.</div>
 						</div>
 					</div>
-					<?php echo alouette::actionMebre();?>
+					<?php echo alouette::actionMebre("plumerai", "tête");?>
 					<div class="appel">Je te plumerai la tête</div>
 					<div class="reponse">Je te plumerai la tête</div>
 					<div class="appel">Et la tête</div>
